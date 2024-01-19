@@ -1,0 +1,4 @@
+<article class="character" *ngIf="character">
+  <img src={{character.url}} alt={{character.name}} class="character__picture" width="200" height="200">
+  <h2 class="character__name"><a [routerLink]="['/characters', character.id]">{{character.name}}</a></h2>
+</article>
